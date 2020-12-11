@@ -1,0 +1,423 @@
+$playfair: 'Playfair Display',
+'cursive';
+$raleway: 'Raleway',
+sans-serif;
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: $raleway;
+  font-size: 1rem;
+  overflow-x: hidden;
+}
+
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: transparent;
+  padding: 20px 0;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.site-logo {
+
+  &:link,
+  &:visited {
+    color: white;
+  }
+
+  &:hover,
+  &:active {
+    text-decoration: none;
+  }
+}
+
+.btn-menu {
+  color: #fff;
+  text-align: center;
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+
+  .svg-icon {
+    fill: #ffffff;
+  }
+}
+
+.container {
+  max-width: 1200px;
+}
+
+nav {
+
+  a {
+    padding-bottom: 3px;
+    transition: all 0.3s ease-in-out;
+
+    &:link,
+    &:visited {
+      color: white;
+    }
+
+    &:hover,
+    &:active {
+      text-decoration: none;
+      border-bottom: 1.5px #1275e4 solid;
+    }
+  }
+}
+
+.text-black {
+  color: black;
+}
+
+.text-blue {
+  color: #1275e4;
+}
+
+.link-blue {
+  transition: all 0.3s ease;
+  &:link,
+  &:visited {
+    color: black;
+    text-decoration: none;
+  }
+
+  &:hover,
+  &:active {
+    color: #1275e4;
+  }
+
+  &.active {
+    &:link,
+    &:visited {
+      color: #1275e4;
+    }
+  }
+}
+
+.bg-blue {
+  background-color: #1275e4;
+}
+
+.w-85 {
+  width: 85% !important;
+}
+
+.cursive {
+  font-family: $playfair;
+  font-style: italic;
+}
+
+.hero {
+  background-image: url("https://demo.athemes.com/sp-business/wp-content/uploads/sites/101/2019/09/IMG.jpg");
+  background-position: center center;
+  background-size: cover;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  padding: 500px 0px 100px 0px;
+  color: #fff;
+
+  .container {
+    padding-left: 9rem;
+    padding-right: 9rem;
+  }
+}
+
+.hero-title {
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+.about {
+  margin-top: 5rem;
+
+  .about-text {
+    padding-left: 6.5rem;
+    padding-right: 6.5rem;
+
+    p {
+      letter-spacing: 1px;
+
+      &:last-child {
+        letter-spacing: 0px;
+      }
+    }
+
+    h2 {
+      font-size: 3rem;
+      line-height: 3.2rem;
+      font-weight: 600;
+    }
+  }
+}
+
+.progress {
+  height: 15px;
+}
+
+.stats {
+  background-image: url("https://demo.athemes.com/sp-business/wp-content/uploads/sites/101/2019/09/Background.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+
+.counter-count {
+  font-size: 4rem;
+  position: relative;
+  color: #ffffff;
+  text-align: center;
+  line-height: 92px;
+  width: 92px;
+  height: 92px;
+  font-family: 'Playfair Display';
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+.counter-text {
+  color: #fff;
+  font-size: 1rem;
+  line-height: 34px;
+}
+
+.services {
+  padding-top: 5rem;
+
+  .row {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  p {
+    width: 85%;
+    margin: auto;
+    font-size: 0.95rem;
+  }
+
+  h4 {
+    font-weight: 600;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+  }
+
+  i {
+    width: 90px;
+    height: 90px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 20px auto;
+    border-radius: 50%;
+  }
+}
+
+.section-header {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.build {
+  background-image: url("https://demo.athemes.com/sp-business/wp-content/uploads/sites/101/2019/09/Clip-1.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .container {
+    width: 85%;
+    padding: 100px 0;
+  }
+
+  .build-content-wrapper {
+    background-color: rgba(24, 26, 32, 0.9);
+    width: 75%;
+  }
+
+  h2 {
+    font-size: 3rem;
+    font-weight: 600;
+
+    span {
+      font-style: italic;
+    }
+  }
+
+  h4 {
+    font-weight: 600;
+    font-size: 1.4rem;
+  }
+
+  i {
+    font-size: 22px;
+    width: 60px;
+    height: 60px;
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    border-radius: 50%;
+  }
+}
+
+.our-work {
+  padding-top: 5rem;
+}
+
+@media(min-width: 1024px) {
+  .site-header:not(.fixed) {
+    background: transparent;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .btn-menu {
+    display: none;
+  }
+}
+
+@media(max-width: 1024px) {
+  .btn-menu {
+    display: block;
+  }
+
+  nav.mobile {
+    margin: 0 auto;
+    width: 108%;
+    position: absolute;
+    top: 28px;
+    right: -5%;
+    margin-top: 15px;
+    background-color: #1c1c1c;
+    z-index: 1000;
+
+    ul {
+      display: block !important;
+      width: 100%;
+
+      &.hidden {
+        display: none !important;
+      }
+
+      li {
+        margin: 0;
+        position: relative;
+        text-align: left;
+        border-top: 1px solid #252525;
+        cursor: pointer;
+
+        a {
+          display: block;
+          text-decoration: none;
+          padding: 13px 50px;
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  .site-header {
+    background-color: #000000;
+    position: static;
+    margin-top: 0 !important;
+
+    .container {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  }
+
+  .about-text {
+    p {
+      width: 100% !important;
+    }
+  }
+
+  .build {
+    .container {
+      width: 100%;
+    }
+  }
+
+  .build-content-wrapper {
+    width: 80% !important;
+
+    i {
+      margin-right: 1rem !important;
+    }
+
+    h4 {
+      font-size: 1.2rem;
+    }
+  }
+
+}
+
+@media(max-width: 767px) {
+
+  .site-header {
+    .row div {
+      .site-logo {
+        display: block;
+        margin: auto;
+        width: 117px;
+        margin-bottom: 20px;
+      }
+
+      margin:auto;
+    }
+  }
+
+  .hero {
+    .container {
+      padding-left: 2.5rem;
+      padding-right: 1.5rem;
+    }
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .about {
+    .about-text {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+
+      h2 {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  .section-header {
+      font-size: 2rem;
+    }
+
+  .build .container {
+    padding: 0 !important;
+  }
+
+  .build-content-wrapper {
+    width: 100% !important;
+
+    h2 {
+      text-align: center;
+      font-size: 1.8rem;
+    }
+
+    p {
+      text-align: center;
+    }
+  }
+}
