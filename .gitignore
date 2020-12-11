@@ -1,4 +1,4 @@
 .gitignore
 .vscode
-bootstrap.min.css
-font-awesome.min.css
+css/bootstrap.min.css
+css/font-awesome.min.css
