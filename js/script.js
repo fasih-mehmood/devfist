@@ -15,10 +15,26 @@ $.fn.isOnScreen = function () {
 };
 
 $(document).ready(function () {
+  // open navigation
   $(".btn-menu").click(e => {
     $("nav ul").toggleClass("hidden");
-  })
+  });
+
+  // change header on scroll
+  $(window).scroll(function () {
+    if (window.innerWidth > 1024) {
+      if (window.scrollY <= 102 && window.scrollY != 0) {
+        $('.site-header').removeClass("float-header");
+        $('.site-header').addClass("fixed");
+      } else if (window.scrollY > 102 && window.scrollY != 0) {
+        $('.site-header').addClass("float-header");
+      } else {
+        $('.site-header').removeClass("fixed float-header");
+      }
+    }
+  });
 });
+
 
 // $(document).on('scroll', function () {
 //   $(".counter-count").each(function () {

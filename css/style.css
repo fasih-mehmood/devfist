@@ -25,6 +25,14 @@ body {
   -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
+.site-header.fixed {
+  background-color: rgba(38, 50, 70, 0.9);
+}
+.site-header.float-header {
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 5px;
+  margin-top: 0;
+}
 
 .site-logo:link, .site-logo:visited {
   color: white;
