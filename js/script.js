@@ -43,7 +43,8 @@ $(document).ready(function () {
   // Run Isotope
   $flist.isotope({
     filter: "*",
-    itemSelector: '.filter-item'
+    itemSelector: '.filter-item',
+    layout: "masonry"
   })
   $filter.find("a").click(function() {
     var selector = $(this).attr("data-filter");
