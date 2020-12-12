@@ -145,6 +145,10 @@ nav a:hover, nav a:active {
   height: 15px;
 }
 
+.progress-bar {
+  transition: width 0.6s ease !important;
+}
+
 .stats {
   background-image: url("https://demo.athemes.com/sp-business/wp-content/uploads/sites/101/2019/09/Background.jpg");
   background-position: center center;
@@ -242,6 +246,42 @@ nav a:hover, nav a:active {
   padding-top: 5rem;
 }
 
+.filter-items {
+  width: 100%;
+}
+
+.filter-item {
+  width: 20%;
+}
+
+.project-inner {
+  margin: 15px;
+}
+.project-inner img {
+  max-width: 100%;
+}
+.project-inner:hover .project-title {
+  scale: 1 !important;
+}
+
+.project-title {
+  text-align: center;
+  padding: 20px;
+  font-size: 12px;
+  background-color: #fff;
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: -5rem;
+  transition: scale 0.3s ease;
+  scale: 0;
+}
+.project-title h3 {
+  margin: 0;
+  font-weight: 600;
+  font-size: 20px;
+}
+
 @media (min-width: 1024px) {
   .site-header:not(.fixed) {
     background: transparent;
@@ -252,17 +292,24 @@ nav a:hover, nav a:active {
     display: none;
   }
 }
+@media (max-width: 1199px) {
+  .filter-item {
+    width: 25%;
+  }
+}
 @media (max-width: 1024px) {
   .btn-menu {
     display: block;
   }
 
+  nav a:hover, nav a:active {
+    border: none;
+  }
+
   nav.mobile {
     margin: 0 auto;
-    width: 108%;
     position: absolute;
-    top: 28px;
-    right: -5%;
+    top: 35px;
     margin-top: 15px;
     background-color: #1c1c1c;
     z-index: 1000;
@@ -316,6 +363,11 @@ nav a:hover, nav a:active {
     font-size: 1.2rem;
   }
 }
+@media (max-width: 991px) {
+  .filter-item {
+    width: 33.3%;
+  }
+}
 @media (max-width: 767px) {
   .site-header .row div {
     margin: auto;
@@ -325,6 +377,12 @@ nav a:hover, nav a:active {
     margin: auto;
     width: 117px;
     margin-bottom: 20px;
+  }
+
+  nav.mobile {
+    top: 28px;
+    width: 108%;
+    right: -5%;
   }
 
   .hero .container {
@@ -361,5 +419,14 @@ nav a:hover, nav a:active {
   }
   .build-content-wrapper p {
     text-align: center;
+  }
+
+  .filter-item {
+    width: 50%;
+  }
+}
+@media (max-width: 479px) {
+  .filter-item {
+    width: 100%;
   }
 }

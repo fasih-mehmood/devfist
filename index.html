@@ -209,16 +209,121 @@
       </div>
     </section>
 
-    <section class="our-work text-center container">
-      <h2 class="section-header">Our <span class="cursive text-blue">work</span></h2>
-      <p class="mb-5 text-black-50">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      <div class="projects-wrapper">
-        <ul class="w-100 list-unstyled d-flex justify-content-center">
-          <li class="pr-5"><a class="link-blue active" href="#">Show all</a></li>
-          <li class="pr-5"><a class="link-blue" href="#">Branding</a></li>
-          <li><a class="link-blue" href="#">Design</a></li>
-        </ul>
+    <section class="our-work text-center">
+      <div class="container">
+        <h2 class="section-header">Our <span class="cursive text-blue">work</span></h2>
+        <p class="mb-5 text-black-50">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div class="projects-wrapper">
+          <ul id="filters" class="w-100 list-unstyled d-flex justify-content-center">
+            <li class="pr-5"><a class="link-blue active" data-filter="*" href="#">Show all</a></li>
+            <li class="pr-5"><a class="link-blue" data-filter=".branding" href="#">Branding</a></li>
+            <li><a class="link-blue" href="#" data-filter=".design">Design</a></li>
+          </ul>
+        </div>
       </div>
+
+      <ul id="filter-items" class="m-3 flex-wrap d-flex flex-row list-unstyled">
+        <li class="filter-item branding">
+          <div class="project-inner">
+            <a href="#">
+              <img src="https://demo.athemes.com/sp-business/wp-content/uploads/sites/101/2019/09/Clip-2.jpg">
+            </a>
+            <div class="project-title">
+              <h3>Project title</h3>
+            </div>
+          </div>
+        </li>
+        <li class="filter-item design">
+          <div class="project-inner">
+            <a href="#">
+              <img src="https://demo.athemes.com/sp-business/wp-content/uploads/sites/101/2020/03/black-samsung-tablet-computer-106344.jpg" title="">
+            </a>
+            <div class="project-title">
+              <h3>Project title</h3>
+            </div>
+          </div>
+        </li>
+        <li class="filter-item design">
+          <div class="project-inner">
+            <a href="#">
+              <img src="https://demo.athemes.com/sp-business/wp-content/uploads/sites/101/2020/03/close-up-photo-of-man-wearing-black-suit-jacket-doing-thumbs-684385.jpg">
+            </a>
+            <div class="project-title">
+              <h3>Project title</h3>
+            </div>
+          </div>
+        </li>
+        <li class="filter-item branding">
+          <div class="project-inner">
+            <a href="#">
+              <img src="https://demo.athemes.com/sp-business/wp-content/uploads/sites/101/2020/03/top-view-photo-of-3-men-in-front-of-laptop-2566581.jpg">
+            </a>
+            <div class="project-title">
+              <h3>Project title</h3>
+            </div>
+          </div>
+        </li>
+        <li class="filter-item design">
+          <div class="project-inner">
+            <a href="#">
+              <img src="https://demo.athemes.com/sp-business/wp-content/uploads/sites/101/2020/03/black-and-white-blackboard-business-chalkboard-356043.jpg" title="" style="">
+            </a>
+            <div class="project-title">
+              <h3>Project title</h3>
+            </div>
+          </div>
+        </li>
+        <li class="filter-item branding">
+          <div class="project-inner">
+            <a href="#">
+              <img src="https://demo.athemes.com/sp-business/wp-content/uploads/sites/101/2020/03/adult-books-business-coffee-374016.jpg" title="" style="">
+            </a>
+            <div class="project-title">
+              <h3>Project title</h3>
+            </div>
+          </div>
+        </li>
+        <li class="filter-item design">
+          <div class="project-inner">
+            <a href="#">
+              <img src="https://demo.athemes.com/sp-business/wp-content/uploads/sites/101/2020/03/woman-coding-on-computer-3861958.jpg" title="" style="">
+            </a>
+            <div class="project-title">
+              <h3>Project title</h3>
+            </div>
+          </div>
+        </li>
+        <li class="filter-item branding">
+          <div class="project-inner">
+            <a href="#">
+              <img src="https://demo.athemes.com/sp-business/wp-content/uploads/sites/101/2020/03/group-of-person-sitting-indoors-3184306.jpg" title="" style="">
+            </a>
+            <div class="project-title">
+              <h3>Project title</h3>
+            </div>
+          </div>
+        </li>
+        <li class="filter-item design">
+          <div class="project-inner">
+            <a href="#">
+              <img src="https://demo.athemes.com/sp-business/wp-content/uploads/sites/101/2020/03/group-of-people-sitting-indoors-3184291.jpg" title="" style="">
+            </a>
+            <div class="project-title">
+              <h3>Project title</h3>
+            </div>
+          </div>
+        </li>
+        <li class="filter-item branding">
+          <div class="project-inner">
+            <a href="#">
+              <img src="https://demo.athemes.com/sp-business/wp-content/uploads/sites/101/2020/03/man-in-black-holding-phone-618613.jpg" title="" style="">
+            </a>
+            <div class="project-title">
+              <h3>Project title</h3>
+            </div>
+          </div>
+        </li>
+      </ul>
     </section>
   </main>
   <footer>
@@ -229,6 +334,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
   </script>
+  <script src="js/isotope.pkgd.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 
