@@ -282,6 +282,76 @@ nav a:hover, nav a:active {
   font-size: 20px;
 }
 
+.testimonies {
+  background-image: url("https://demo.athemes.com/sp-business/wp-content/uploads/sites/101/2019/09/Clip-4.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  margin-top: 6rem;
+  position: relative;
+}
+.testimonies .container {
+  width: 80%;
+  position: relative;
+  z-index: 4;
+}
+
+.bg-overlay {
+  background-color: #000000;
+  opacity: 0.66;
+  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.fa-quote-left {
+  color: rgba(255, 255, 255, 0.33);
+  font-size: 52px;
+  margin: 0 auto 50px;
+}
+
+.carousel-item {
+  transition: 0.75s all ease;
+}
+
+.carousel-indicators li {
+  width: 7px;
+  height: 7px;
+  border-radius: 100%;
+  background-color: rgba(255, 255, 255, 0.33);
+  border: 2px solid #a49fba;
+}
+.carousel-indicators li:hover {
+  background-color: rgba(255, 255, 255, 0.33) !important;
+}
+.carousel-indicators li:not(.active) {
+  background-color: transparent;
+}
+
+.whisper {
+  color: #ffffff;
+  font-family: "Playfair Display", Sans-serif;
+  font-size: 24px;
+  font-style: italic;
+}
+
+.name {
+  color: #ffffff;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.testimonial-position {
+  font-size: 13px;
+  font-weight: 500;
+}
+
 @media (min-width: 1024px) {
   .site-header:not(.fixed) {
     background: transparent;
