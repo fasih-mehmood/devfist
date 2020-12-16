@@ -36,9 +36,9 @@
           </div>
           <nav class="align-items-center mobile d-flex">
             <ul class="hidden m-0 list-unstyled d-flex">
-              <li class="px-3"><a href="#">Home</a></li>
-              <li class="px-3"><a href="#">My blog page</a></li>
-              <li class="px-3"><a href="#">Contact</a></li>
+              <li class="px-3"><a href="#section-services">Services</a></li>
+              <li class="px-3"><a href="#section-pricing">Our Pricing</a></li>
+              <li class="px-3"><a href="#section-contact">Contact</a></li>
             </ul>
           </nav>
         </div>
@@ -56,7 +56,7 @@
         </div>
       </div>
     </section>
-    <section class="container mx-auto mb-5 about">
+    <section class="container mx-auto mb-3 about">
       <div class="mb-5 about-text">
         <p class="text-uppercase text-blue font-weight-bold">About us</p>
         <h2 class="text-black">DevFist enabling both freelancers and businesses to create a fantastic looking
@@ -102,11 +102,10 @@
           </div>
         </div>
       </div>
-
     </section>
 
-    <section class="pt-5 stats">
-      <div class="container py-5 w-85 text-center text-uppercase">
+    <section class="stats">
+      <div class="container py-2 w-85 text-center text-uppercase">
         <div class="row py-3">
           <div class="col-md-3 col-sm-12">
             <div class="counter-wrapper pb-4">
@@ -143,29 +142,29 @@
       </div>
     </section>
 
-    <section class="container services text-center">
+    <section class="container services text-center" id="section-services">
       <h2 class="section-header">Our <span class="cursive text-blue">services</span></h2>
       <p class="text-black-50">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      <div class="row py-5">
-        <div class="col-md-3 pb-5 col-sm-12">
+      <div class="row">
+        <div class="box-shadow-hover mb-5 col-md-3 pb-5 col-sm-12">
           <i class="fa fa-2x py-4 fa-image text-white bg-blue"></i>
           <h4>UX/UI Design</h4>
           <p class="text-black-50">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec
             ullamcorper mattis.</p>
         </div>
-        <div class="col-md-3 pb-5 col-sm-12">
+        <div class="box-shadow-hover mb-5 col-md-3 pb-5 col-sm-12">
           <i class="fa fa-2x py-4 fa-cog text-white bg-blue"></i>
           <h4>Development</h4>
           <p class="text-black-50">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec
             ullamcorper mattis.</p>
         </div>
-        <div class="col-md-3 pb-5 col-sm-12">
+        <div class="box-shadow-hover mb-5 col-md-3 pb-5 col-sm-12">
           <i class="fa fa-2x py-4 fa-bullhorn text-white bg-blue"></i>
           <h4>Marketing</h4>
           <p class="text-black-50">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec
             ullamcorper mattis.</p>
         </div>
-        <div class="col-md-3 col-sm-12">
+        <div class="box-shadow-hover mb-5 pb-5 col-md-3 col-sm-12">
           <i class="fa fa-2x py-4 fa-rocket text-white bg-blue"></i>
           <h4>App development</h4>
           <p class="text-black-50">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec
@@ -221,7 +220,6 @@
           </ul>
         </div>
       </div>
-
       <ul id="filter-items" class="m-3 flex-wrap d-flex flex-row list-unstyled">
         <li class="filter-item branding">
           <div class="project-inner">
@@ -349,14 +347,20 @@
         <div id="customerTestimony" class="carousel slide" data-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <blockquote class="whisper pb-3"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla id purus neque. Curabitur pulvinar elementum neque in dictum. Sed non lectus nec tortor iaculis tincidunt.</p></blockquote>
+              <blockquote class="whisper pb-3">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla id purus neque. Curabitur pulvinar
+                  elementum neque in dictum. Sed non lectus nec tortor iaculis tincidunt.</p>
+              </blockquote>
               <div class="name">
                 <div class="testimonial-name">John Doe</div>
                 <span class="testimonial-position text-uppercase">Manager</span>
               </div>
             </div>
             <div class="carousel-item">
-              <blockquote class="whisper pb-3"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla id purus neque. Curabitur pulvinar elementum neque in dictum. Sed non lectus nec tortor iaculis tincidunt.</p></blockquote>
+              <blockquote class="whisper pb-3">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla id purus neque. Curabitur pulvinar
+                  elementum neque in dictum. Sed non lectus nec tortor iaculis tincidunt.</p>
+              </blockquote>
               <div class="name">
                 <div class="testimonial-name">James Steven</div>
                 <span class="testimonial-position text-uppercase">Manager</span>
@@ -370,8 +374,190 @@
         </div>
       </div>
     </section>
+
+    <section class="pricing text-center" id="section-pricing">
+      <div class="container">
+        <h2 class="section-header">Our <span class="cursive text-blue">Pricing</span></h2>
+        <p class="mb-5 text-black-50">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div class="d-flex flex-wrap justify-content-around">
+          <div class="pricing-plan">
+            <div class="plan-inner">
+              <div class="plan-header">
+                <div class="plan-price text-blue">
+                  <span>$</span>35<span class="text-black-50">/month</span>
+                </div>
+                <h4 class="text-uppercase">Personal plan</h4>
+              </div>
+              <div class="plan-text">
+                <div class="plan-feature">
+                  Just a feature </div>
+                <div class="plan-feature">
+                  Just a feature </div>
+                <div class="plan-feature">
+                  Just a feature </div>
+              </div>
+              <button class="plan-btn">
+                Buy now
+              </button>
+            </div>
+          </div>
+          <div class="pricing-plan popular">
+            <div class="plan-inner">
+              <div class="plan-header">
+                <div class="plan-price text-blue">
+                  <span>$</span>35<span class="text-black-50">/month</span>
+                </div>
+                <h4 class="text-uppercase">Personal plan</h4>
+              </div>
+              <div class="plan-text">
+                <div class="plan-feature">
+                  Just a feature </div>
+                <div class="plan-feature">
+                  Just a feature </div>
+                <div class="plan-feature">
+                  Just a feature </div>
+              </div>
+              <button class="plan-btn plan-btn-blue">
+                Buy now
+              </button>
+            </div>
+          </div>
+          <div class="pricing-plan">
+            <div class="plan-inner">
+              <div class="plan-header">
+                <div class="plan-price text-blue">
+                  <span>$</span>35<span class="text-black-50">/month</span>
+                </div>
+                <h4 class="text-uppercase">Personal plan</h4>
+              </div>
+              <div class="plan-text">
+                <div class="plan-feature">
+                  Just a feature </div>
+                <div class="plan-feature">
+                  Just a feature </div>
+                <div class="plan-feature">
+                  Just a feature </div>
+              </div>
+              <button class="plan-btn">
+                Buy now
+              </button>
+            </div>
+          </div>
+          <div class="pricing-plan">
+            <div class="plan-inner">
+              <div class="plan-header">
+                <div class="plan-price text-blue">
+                  <span>$</span>35<span class="text-black-50">/month</span>
+                </div>
+                <h4 class="text-uppercase">Personal plan</h4>
+              </div>
+              <div class="plan-text">
+                <div class="plan-feature">
+                  Just a feature </div>
+                <div class="plan-feature">
+                  Just a feature </div>
+                <div class="plan-feature">
+                  Just a feature </div>
+              </div>
+              <button class="plan-btn">
+                Buy now
+              </button>
+            </div>
+          </div>
+          <div class="pricing-plan">
+            <div class="plan-inner">
+              <div class="plan-header">
+                <div class="plan-price text-blue">
+                  <span>$</span>35<span class="text-black-50">/month</span>
+                </div>
+                <h4 class="text-uppercase">Personal plan</h4>
+              </div>
+              <div class="plan-text">
+                <div class="plan-feature">
+                  Just a feature </div>
+                <div class="plan-feature">
+                  Just a feature </div>
+                <div class="plan-feature">
+                  Just a feature </div>
+              </div>
+              <button class="plan-btn">
+                Buy now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="section-contact">
+      <iframe scrolling="no" marginheight="0" marginwidth="0"
+        src="https://maps.google.com/maps?q=university%20of%20engineering%20%26%20technology%20Taxila&t=&z=15&ie=UTF8&iwloc=&output=embed"
+        aria-label="UET Taxila, Punjab, Pakistan" frameborder="0"></iframe>
+      <div class="container">
+        <h2 class="text-center mt-5 pt-4 section-header">Contact Us</h2>
+        <div class="row mt-5 justify-content-center">
+          <div class="contact-details col-11 col-md-4">
+            <h2>Taxila Office</h2>
+            <div class="mb-3 d-flex address align-items-center">
+              <i class="fa fa-home mr-3"></i>
+              <p>Room 138, AB Hall, UET Taxila<br> Punjab, Pakistan</p>
+            </div>
+            <div>
+              <a href="mailto:devfistofficial@gmail.com" class="mb-1 d-inline-block link-blue">
+                <i class="fa fa-envelope mr-3"></i>devfistofficial@gmail.com</a>
+              <a href="https://wa.me/923123456789" target="_blank" class="mb-1 link-blue d-inline-block">
+                <i class="fa fa-whatsapp mr-3"></i>+92 312-3456789</a>
+            </div>
+          </div>
+          <form class="contact-form col-md-8 col-12" id="contact-form">
+            <div class="row">
+              <div class="col-md-6 mb-4">
+                <input type="text" size="40" name="FirstName" id="FirstName" class="form-control"
+                  placeholder="First Name" required>
+              </div>
+              <div class="col-md-6 mb-4">
+                <input type="text" size="40" name="LastName" id="LastName" class="form-control" placeholder="Last Name"
+                  required>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 mb-4">
+                <input type="email" size="40" name="YourEmail" id="YourEmail" class="form-control"
+                  placeholder="Your Email" required>
+              </div>
+              <div class="col-md-6 mb-4">
+                <input type="tel" size="40" name="PhoneNumber" id="PhoneNumber" class="form-control"
+                  placeholder="Phone Number" required>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <textarea class="form-control" name="Message" cols="40" rows="10" placeholder="Message"></textarea>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 mt-5">
+                <input type="submit" value="Send message" class="submit-btn">
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
   </main>
   <footer>
+    <a class="go-top">
+      <i class="svg-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+          <path
+            d="M240.971 130.524l194.343 194.343c9.373 9.373 9.373 24.569 0 33.941l-22.667 22.667c-9.357 9.357-24.522 9.375-33.901.04L224 227.495 69.255 381.516c-9.379 9.335-24.544 9.317-33.901-.04l-22.667-22.667c-9.373-9.373-9.373-24.569 0-33.941L207.03 130.525c9.372-9.373 24.568-9.373 33.941-.001z">
+          </path>
+        </svg>
+      </i>
+    </a>
+    <div class="border-top">
+      <p class="container my-4">©2020 <span class="cursive">DevFist</span>. All rights reserved</p>
+    </div>
   </footer>
 
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"
