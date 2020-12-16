@@ -24,10 +24,6 @@ body {
   z-index: 1000;
   background-color: transparent;
   padding: 20px 0;
-  -webkit-transition: all 0.3s ease-out;
-  -moz-transition: all 0.3s ease-out;
-  -ms-transition: all 0.3s ease-out;
-  -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 
   &.fixed {
@@ -518,14 +514,7 @@ section {
   opacity: 0;
   z-index: 9999;
   cursor: pointer;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  -o-border-radius: 2px;
   border-radius: 2px;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  -o-transition: all 0.5s;
   transition: all 0.5s;
   background-color: #1275e4;
 
@@ -599,10 +588,6 @@ section {
   border-radius: 0;
   height: 50px;
   // padding: 4px 20px;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 
   &:focus {
@@ -624,14 +609,7 @@ section {
     font-size: 14px;
     line-height: 24px;
     padding: 12px 34px;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    -o-border-radius: 3px;
     border-radius: 3px;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -ms-transition: all 0.3s;
-    -o-transition: all 0.3s;
     transition: all 0.3s;
 
     &:hover {
@@ -646,6 +624,7 @@ footer {
     background-color: #020111;
     color: #868990;
   }
+
   p {
     letter-spacing: 1px;
   }
