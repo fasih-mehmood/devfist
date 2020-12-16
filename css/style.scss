@@ -641,6 +641,16 @@ section {
   }
 }
 
+footer {
+  .border-top {
+    background-color: #020111;
+    color: #868990;
+  }
+  p {
+    letter-spacing: 1px;
+  }
+}
+
 @media(min-width: 1024px) {
   .site-header:not(.fixed) {
     background: transparent;

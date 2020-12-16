@@ -560,6 +560,14 @@ section {
   color: #1275e4;
 }
 
+footer .border-top {
+  background-color: #020111;
+  color: #868990;
+}
+footer p {
+  letter-spacing: 1px;
+}
+
 @media (min-width: 1024px) {
   .site-header:not(.fixed) {
     background: transparent;
