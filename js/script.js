@@ -1,19 +1,3 @@
-$.fn.isOnScreen = function () {
-  var win = $(window);
-  var viewport = {
-    top: win.scrollTop(),
-    left: win.scrollLeft()
-  };
-  viewport.right = viewport.left + win.width();
-  viewport.bottom = viewport.top + win.height();
-
-  var bounds = this.offset();
-  bounds.right = bounds.left + this.outerWidth();
-  bounds.bottom = bounds.top + this.outerHeight();
-
-  return (!(viewport.right < bounds.left || viewport.left > bounds.right || viewport.bottom < bounds.top || viewport.top > bounds.bottom));
-};
-
 $(document).ready(function () {
   // open navigation
   $(".btn-menu").click(e => {
@@ -98,19 +82,26 @@ $(document).ready(function () {
     });
 
   // initialize isotop
-  var $flist = $("#filter-items");
-  var $filter = $("#filters")
+  var $flistProject = $("#filter-project-items");
+  var $filterProject = $("#project-filters");
+  // var $flistPackage = $("#filter-package-items");
+  // var $filterPackage = $("#package-filters");
   // Run Isotope
-  $flist.isotope({
+  $flistProject.isotope({
     filter: "*",
-    itemSelector: '.filter-item',
+    itemSelector: '.filter-project-item',
     layout: "masonry"
-  })
-  $filter.find("a").click(function() {
+  });
+  // $flistPackage.isotope({
+  //   filter: ".webdev",
+  //   itemSelector: '.filter-package-item',
+  //   layout: "masonry"
+  // });
+  $filterProject.find("a").click(function() {
     var selector = $(this).attr("data-filter");
     $(this).parent().parent().find("a").removeClass("active");
     $(this).addClass("active");
-    $flist.isotope({
+    $flistProject.isotope({
       filter: selector,
       animationOptions: {
           duration: 750,
@@ -120,4 +111,24 @@ $(document).ready(function () {
     });
     return false;
     });
+
+    $carousel = $(".main-carousel");
+    $carousel.flickity({
+      // options
+      cellAlign: 'center',
+      contain: true
+    });
+
+    $changeSlide = $("#package-slides a");
+    $changeSlide.click(function() {
+      var selector = $(this).attr("data-toggle");
+      $(this).parent().parent().find("a").removeClass("active");
+      $(this).addClass("active");
+      $carousel.flickity( 'select', selector );
+    });
+
+    $carousel.on('change.flickity', function( event, index ) {
+      $changeSlide[index].click();
+    });
+
 });

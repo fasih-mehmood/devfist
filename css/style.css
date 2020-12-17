@@ -244,11 +244,7 @@ section {
   border-radius: 50%;
 }
 
-.filter-items {
-  width: 100%;
-}
-
-.filter-item {
+.filter-project-item {
   width: 20%;
 }
 
@@ -557,7 +553,7 @@ footer p {
   }
 }
 @media (max-width: 1199px) {
-  .filter-item {
+  .filter-project-item {
     width: 25%;
   }
 }
@@ -628,7 +624,7 @@ footer p {
   }
 }
 @media (max-width: 991px) {
-  .filter-item {
+  .filter-project-item {
     width: 33.3%;
   }
 }
@@ -686,7 +682,7 @@ footer p {
     text-align: center;
   }
 
-  .filter-item {
+  .filter-project-item {
     width: 50%;
   }
 
@@ -704,7 +700,7 @@ footer p {
   }
 }
 @media (max-width: 479px) {
-  .filter-item {
+  .filter-project-item {
     width: 100%;
   }
 

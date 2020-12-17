@@ -294,11 +294,7 @@ section {
   }
 }
 
-.filter-items {
-  width: 100%;
-}
-
-.filter-item {
+.filter-project-item {
   width: 20%;
 }
 
@@ -642,7 +638,7 @@ footer {
 }
 
 @media(max-width: 1199px) {
-  .filter-item {
+  .filter-project-item {
     width: 25%;
   }
 }
@@ -730,7 +726,7 @@ footer {
 }
 
 @media(max-width: 991px) {
-  .filter-item {
+  .filter-project-item {
     width: 33.3%;
   }
 }
@@ -800,7 +796,7 @@ footer {
     }
   }
 
-  .filter-item {
+  .filter-project-item {
     width: 50%;
   }
 
@@ -819,7 +815,7 @@ footer {
 }
 
 @media(max-width: 479px) {
-  .filter-item {
+  .filter-project-item {
     width: 100%;
   }
 
