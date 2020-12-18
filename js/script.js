@@ -6,7 +6,7 @@ $(document).ready(function () {
 
   //scroll to top
   $(".go-top").click(e => {
-    $("body").animate({scrollTop:0}, '500');
+    $("html, body").animate({scrollTop:0}, '500');
   });
 
   if(window.innerWidth > 1024 && window.scrollY > 102) {
