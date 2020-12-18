@@ -9,6 +9,7 @@
     href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
     rel="stylesheet">
   <title>Home - DevFist</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
     integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -376,23 +377,25 @@
     <section class="pricing text-center" id="section-pricing">
       <div class="container">
         <h2 class="section-header">Our <span class="cursive text-blue">Pricing</span></h2>
-        <p class="mb-5 text-black-50">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <ul id="package-slides" class="border-bottom pb-4 w-100 list-unstyled d-flex justify-content-center">
-          <li class="pr-5"><a class="link-blue active" href="javascript:void(0)" data-toggle="0">Web Development</a>
+        <p class="mb-3 text-black-50">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <ul id="package-slides" class="border-bottom flex-wrap pb-4 w-100 mx-auto list-unstyled d-flex justify-content-around">
+          <li class="px-2 pt-3"><a class="link-blue link-webdev active" href="javascript:void(0)" data-toggle="0">Web Development</a>
           </li>
-          <li class="pr-5"><a class="link-blue" href="javascript:void(0)" data-toggle="1">App Development</a></li>
-          <li class="pr-5"><a class="link-blue" href="javascript:void(0)" data-toggle="2">Social Media Marketing</a>
+          <li class="px-2 pt-3"><a class="link-blue link-appdev" href="javascript:void(0)" data-toggle="1">App Development</a></li>
+          <li class="px-2 pt-3"><a class="link-blue link-smm" href="javascript:void(0)" data-toggle="2">Social Media Marketing</a>
           </li>
-          <li class="pr-5"><a class="link-blue" href="javascript:void(0)" data-toggle="3">Graphics Design</a></li>
-          <li><a class="link-blue" href="javascript:void(0)" data-toggle="4">Video Editing</a></li>
+          <li class="px-2 pt-3"><a class="link-blue link-design" href="javascript:void(0)" data-toggle="3">Graphics Design</a></li>
+          <li class="px-2 pt-3"><a class="link-blue link-vedit" href="javascript:void(0)" data-toggle="4">Video Editing</a></li>
+          <li class="px-2 pt-3"><a class="link-blue link-iot" href="javascript:void(0)" data-toggle="5">IOT Home Automation</a></li>
+          <li class="px-2 pt-3"><a class="link-blue link-dataEntry" href="javascript:void(0)" data-toggle="6">Data Entry</a></li>
         </ul>
-        <ul data-flickity='{ "wrapAround": true, "autoPlay": true, "prevNextButtons": false, "pageDots": false }'
+        <ul data-flickity='{ "wrapAround": true, "prevNextButtons": false, "pageDots": false }'
           class="main-carousel pt-4 list-unstyled">
-          <li class="webdev carousel-cell filter-package-item w-100 flex-wrap d-flex flex-row justify-content-around">
+          <li class="webdev carousel-cell w-100 flex-wrap d-flex flex-row justify-content-around">
             <div class="pricing-plan">
               <div class="plan-inner">
                 <div class="plan-header">
-                  <div class="plan-price text-blue">
+                  <div class="plan-price">
                     <span>$</span>35<span class="text-black-50">/month</span>
                   </div>
                   <h4 class="text-uppercase">Personal plan</h4>
@@ -410,31 +413,10 @@
                 </button>
               </div>
             </div>
-            <div class="pricing-plan popular">
+            <div class="pricing-plan middle">
               <div class="plan-inner">
                 <div class="plan-header">
-                  <div class="plan-price text-blue">
-                    <span>$</span>35<span class="text-black-50">/month</span>
-                  </div>
-                  <h4 class="text-uppercase">Personal plan</h4>
-                </div>
-                <div class="plan-text">
-                  <div class="plan-feature">
-                    Just a feature </div>
-                  <div class="plan-feature">
-                    Just a feature </div>
-                  <div class="plan-feature">
-                    Just a feature </div>
-                </div>
-                <button class="plan-btn plan-btn-blue">
-                  Buy now
-                </button>
-              </div>
-            </div>
-            <div class="pricing-plan">
-              <div class="plan-inner">
-                <div class="plan-header">
-                  <div class="plan-price text-blue">
+                  <div class="plan-price">
                     <span>$</span>35<span class="text-black-50">/month</span>
                   </div>
                   <h4 class="text-uppercase">Personal plan</h4>
@@ -452,54 +434,10 @@
                 </button>
               </div>
             </div>
-          </li>
-          <li class="appdev carousel-cell filter-package-item w-100 flex-wrap d-flex flex-row justify-content-around">
             <div class="pricing-plan">
               <div class="plan-inner">
                 <div class="plan-header">
-                  <div class="plan-price text-blue">
-                    <span>$</span>35<span class="text-black-50">/month</span>
-                  </div>
-                  <h4 class="text-uppercase">Personal plan</h4>
-                </div>
-                <div class="plan-text">
-                  <div class="plan-feature">
-                    Just a feature </div>
-                  <div class="plan-feature">
-                    Just a feature </div>
-                  <div class="plan-feature">
-                    Just a feature </div>
-                </div>
-                <button class="plan-btn">
-                  Buy now
-                </button>
-              </div>
-            </div>
-            <div class="pricing-plan popular">
-              <div class="plan-inner">
-                <div class="plan-header">
-                  <div class="plan-price text-blue">
-                    <span>$</span>35<span class="text-black-50">/month</span>
-                  </div>
-                  <h4 class="text-uppercase">Personal plan</h4>
-                </div>
-                <div class="plan-text">
-                  <div class="plan-feature">
-                    Just a feature </div>
-                  <div class="plan-feature">
-                    Just a feature </div>
-                  <div class="plan-feature">
-                    Just a feature </div>
-                </div>
-                <button class="plan-btn plan-btn-blue">
-                  Buy now
-                </button>
-              </div>
-            </div>
-            <div class="pricing-plan">
-              <div class="plan-inner">
-                <div class="plan-header">
-                  <div class="plan-price text-blue">
+                  <div class="plan-price">
                     <span>$</span>35<span class="text-black-50">/month</span>
                   </div>
                   <h4 class="text-uppercase">Personal plan</h4>
@@ -518,11 +456,11 @@
               </div>
             </div>
           </li>
-          <li class="smm carousel-cell filter-package-item w-100 flex-wrap d-flex flex-row justify-content-around">
+          <li class="appdev carousel-cell w-100 flex-wrap d-flex flex-row justify-content-around">
             <div class="pricing-plan">
               <div class="plan-inner">
                 <div class="plan-header">
-                  <div class="plan-price text-blue">
+                  <div class="plan-price">
                     <span>$</span>35<span class="text-black-50">/month</span>
                   </div>
                   <h4 class="text-uppercase">Personal plan</h4>
@@ -540,10 +478,10 @@
                 </button>
               </div>
             </div>
-            <div class="pricing-plan popular">
+            <div class="pricing-plan middle">
               <div class="plan-inner">
                 <div class="plan-header">
-                  <div class="plan-price text-blue">
+                  <div class="plan-price">
                     <span>$</span>35<span class="text-black-50">/month</span>
                   </div>
                   <h4 class="text-uppercase">Personal plan</h4>
@@ -564,7 +502,7 @@
             <div class="pricing-plan">
               <div class="plan-inner">
                 <div class="plan-header">
-                  <div class="plan-price text-blue">
+                  <div class="plan-price">
                     <span>$</span>35<span class="text-black-50">/month</span>
                   </div>
                   <h4 class="text-uppercase">Personal plan</h4>
@@ -583,11 +521,11 @@
               </div>
             </div>
           </li>
-          <li class="design carousel-cell filter-package-item w-100 flex-wrap d-flex flex-row justify-content-around">
+          <li class="smm carousel-cell w-100 flex-wrap d-flex flex-row justify-content-around">
             <div class="pricing-plan">
               <div class="plan-inner">
                 <div class="plan-header">
-                  <div class="plan-price text-blue">
+                  <div class="plan-price">
                     <span>$</span>35<span class="text-black-50">/month</span>
                   </div>
                   <h4 class="text-uppercase">Personal plan</h4>
@@ -605,10 +543,10 @@
                 </button>
               </div>
             </div>
-            <div class="pricing-plan popular">
+            <div class="pricing-plan middle">
               <div class="plan-inner">
                 <div class="plan-header">
-                  <div class="plan-price text-blue">
+                  <div class="plan-price">
                     <span>$</span>35<span class="text-black-50">/month</span>
                   </div>
                   <h4 class="text-uppercase">Personal plan</h4>
@@ -629,7 +567,7 @@
             <div class="pricing-plan">
               <div class="plan-inner">
                 <div class="plan-header">
-                  <div class="plan-price text-blue">
+                  <div class="plan-price">
                     <span>$</span>35<span class="text-black-50">/month</span>
                   </div>
                   <h4 class="text-uppercase">Personal plan</h4>
@@ -648,11 +586,11 @@
               </div>
             </div>
           </li>
-          <li class="vedit carousel-cell filter-package-item w-100 flex-wrap d-flex flex-row justify-content-around">
+          <li class="design carousel-cell w-100 flex-wrap d-flex flex-row justify-content-around">
             <div class="pricing-plan">
               <div class="plan-inner">
                 <div class="plan-header">
-                  <div class="plan-price text-blue">
+                  <div class="plan-price">
                     <span>$</span>35<span class="text-black-50">/month</span>
                   </div>
                   <h4 class="text-uppercase">Personal plan</h4>
@@ -670,10 +608,10 @@
                 </button>
               </div>
             </div>
-            <div class="pricing-plan popular">
+            <div class="pricing-plan middle">
               <div class="plan-inner">
                 <div class="plan-header">
-                  <div class="plan-price text-blue">
+                  <div class="plan-price">
                     <span>$</span>35<span class="text-black-50">/month</span>
                   </div>
                   <h4 class="text-uppercase">Personal plan</h4>
@@ -694,7 +632,202 @@
             <div class="pricing-plan">
               <div class="plan-inner">
                 <div class="plan-header">
-                  <div class="plan-price text-blue">
+                  <div class="plan-price">
+                    <span>$</span>35<span class="text-black-50">/month</span>
+                  </div>
+                  <h4 class="text-uppercase">Personal plan</h4>
+                </div>
+                <div class="plan-text">
+                  <div class="plan-feature">
+                    Just a feature </div>
+                  <div class="plan-feature">
+                    Just a feature </div>
+                  <div class="plan-feature">
+                    Just a feature </div>
+                </div>
+                <button class="plan-btn">
+                  Buy now
+                </button>
+              </div>
+            </div>
+          </li>
+          <li class="vedit carousel-cell w-100 flex-wrap d-flex flex-row justify-content-around">
+            <div class="pricing-plan">
+              <div class="plan-inner">
+                <div class="plan-header">
+                  <div class="plan-price">
+                    <span>$</span>35<span class="text-black-50">/month</span>
+                  </div>
+                  <h4 class="text-uppercase">Personal plan</h4>
+                </div>
+                <div class="plan-text">
+                  <div class="plan-feature">
+                    Just a feature </div>
+                  <div class="plan-feature">
+                    Just a feature </div>
+                  <div class="plan-feature">
+                    Just a feature </div>
+                </div>
+                <button class="plan-btn">
+                  Buy now
+                </button>
+              </div>
+            </div>
+            <div class="pricing-plan middle">
+              <div class="plan-inner">
+                <div class="plan-header">
+                  <div class="plan-price">
+                    <span>$</span>35<span class="text-black-50">/month</span>
+                  </div>
+                  <h4 class="text-uppercase">Personal plan</h4>
+                </div>
+                <div class="plan-text">
+                  <div class="plan-feature">
+                    Just a feature </div>
+                  <div class="plan-feature">
+                    Just a feature </div>
+                  <div class="plan-feature">
+                    Just a feature </div>
+                </div>
+                <button class="plan-btn plan-btn-blue">
+                  Buy now
+                </button>
+              </div>
+            </div>
+            <div class="pricing-plan">
+              <div class="plan-inner">
+                <div class="plan-header">
+                  <div class="plan-price">
+                    <span>$</span>35<span class="text-black-50">/month</span>
+                  </div>
+                  <h4 class="text-uppercase">Personal plan</h4>
+                </div>
+                <div class="plan-text">
+                  <div class="plan-feature">
+                    Just a feature </div>
+                  <div class="plan-feature">
+                    Just a feature </div>
+                  <div class="plan-feature">
+                    Just a feature </div>
+                </div>
+                <button class="plan-btn">
+                  Buy now
+                </button>
+              </div>
+            </div>
+          </li>
+          <li class="iot carousel-cell w-100 flex-wrap d-flex flex-row justify-content-around">
+            <div class="pricing-plan">
+              <div class="plan-inner">
+                <div class="plan-header">
+                  <div class="plan-price">
+                    <span>$</span>35<span class="text-black-50">/month</span>
+                  </div>
+                  <h4 class="text-uppercase">Personal plan</h4>
+                </div>
+                <div class="plan-text">
+                  <div class="plan-feature">
+                    Just a feature </div>
+                  <div class="plan-feature">
+                    Just a feature </div>
+                  <div class="plan-feature">
+                    Just a feature </div>
+                </div>
+                <button class="plan-btn">
+                  Buy now
+                </button>
+              </div>
+            </div>
+            <div class="pricing-plan middle">
+              <div class="plan-inner">
+                <div class="plan-header">
+                  <div class="plan-price">
+                    <span>$</span>35<span class="text-black-50">/month</span>
+                  </div>
+                  <h4 class="text-uppercase">Personal plan</h4>
+                </div>
+                <div class="plan-text">
+                  <div class="plan-feature">
+                    Just a feature </div>
+                  <div class="plan-feature">
+                    Just a feature </div>
+                  <div class="plan-feature">
+                    Just a feature </div>
+                </div>
+                <button class="plan-btn plan-btn-blue">
+                  Buy now
+                </button>
+              </div>
+            </div>
+            <div class="pricing-plan">
+              <div class="plan-inner">
+                <div class="plan-header">
+                  <div class="plan-price">
+                    <span>$</span>35<span class="text-black-50">/month</span>
+                  </div>
+                  <h4 class="text-uppercase">Personal plan</h4>
+                </div>
+                <div class="plan-text">
+                  <div class="plan-feature">
+                    Just a feature </div>
+                  <div class="plan-feature">
+                    Just a feature </div>
+                  <div class="plan-feature">
+                    Just a feature </div>
+                </div>
+                <button class="plan-btn">
+                  Buy now
+                </button>
+              </div>
+            </div>
+          </li>
+          <li class="dataEntry carousel-cell w-100 flex-wrap d-flex flex-row justify-content-around">
+            <div class="pricing-plan">
+              <div class="plan-inner">
+                <div class="plan-header">
+                  <div class="plan-price">
+                    <span>$</span>35<span class="text-black-50">/month</span>
+                  </div>
+                  <h4 class="text-uppercase">Personal plan</h4>
+                </div>
+                <div class="plan-text">
+                  <div class="plan-feature">
+                    Just a feature </div>
+                  <div class="plan-feature">
+                    Just a feature </div>
+                  <div class="plan-feature">
+                    Just a feature </div>
+                </div>
+                <button class="plan-btn">
+                  Buy now
+                </button>
+              </div>
+            </div>
+            <div class="pricing-plan middle">
+              <div class="plan-inner">
+                <div class="plan-header">
+                  <div class="plan-price">
+                    <span>$</span>35<span class="text-black-50">/month</span>
+                  </div>
+                  <h4 class="text-uppercase">Personal plan</h4>
+                </div>
+                <div class="plan-text">
+                  <div class="plan-feature">
+                    Just a feature </div>
+                  <div class="plan-feature">
+                    Just a feature </div>
+                  <div class="plan-feature">
+                    Just a feature </div>
+                </div>
+                <button class="plan-btn plan-btn-blue">
+                  Buy now
+                </button>
+              </div>
+            </div>
+            <div class="pricing-plan">
+              <div class="plan-inner">
+                <div class="plan-header">
+                  <div class="plan-price">
                     <span>$</span>35<span class="text-black-50">/month</span>
                   </div>
                   <h4 class="text-uppercase">Personal plan</h4>

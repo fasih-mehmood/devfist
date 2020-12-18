@@ -409,7 +409,7 @@ section {
   position: relative;
   overflow: hidden;
 
-  &.popular .plan-header::before {
+  &.middle .plan-header::before {
     content: 'Popular';
     position: absolute;
     top: 20px;
@@ -482,14 +482,275 @@ section {
   width: 75%;
   transition: all .3s ease-in-out;
 
-  &.plan-btn-blue {
-    background-color: #1275e4;
-    color: #fff;
-  }
-
   &:hover {
     color: #47425d;
     background-color: transparent;
+  }
+}
+
+.link-webdev {
+
+  &:hover,
+  &:active {
+    color: orange;
+  }
+
+  &.active {
+
+    &:link,
+    &:visited {
+      color: orange;
+    }
+  }
+}
+
+.webdev {
+  .plan-price {
+    color: orange;
+  }
+
+  .middle {
+    .plan-header::before {
+      background: orange;
+    }
+
+    .plan-btn {
+      background-color: orange;
+      color: #fff;
+
+      &:hover {
+        color: #47425d;
+        background-color: transparent;
+      }
+    }
+  }
+}
+
+.link-appdev {
+
+  &:hover,
+  &:active {
+    color: #b9de1d;
+  }
+
+  &.active {
+
+    &:link,
+    &:visited {
+      color: #b9de1d;
+    }
+  }
+}
+
+.appdev {
+  .plan-price {
+    color: #b9de1d;
+  }
+
+  .middle {
+    .plan-header::before {
+      background: #b9de1d;
+    }
+
+    .plan-btn {
+      background-color: #b9de1d;
+      color: #fff;
+
+      &:hover {
+        color: #47425d;
+        background-color: transparent;
+      }
+    }
+  }
+}
+
+.link-smm {
+
+  &:hover,
+  &:active {
+    color: #16a085;
+  }
+
+  &.active {
+
+    &:link,
+    &:visited {
+      color: #16a085;
+    }
+  }
+}
+
+.smm {
+  .plan-price {
+    color: #16a085;
+  }
+
+  .middle {
+    .plan-header::before {
+      background: #16a085;
+    }
+
+    .plan-btn {
+      background-color: #16a085;
+      color: #fff;
+
+      &:hover {
+        color: #47425d;
+        background-color: transparent;
+      }
+    }
+  }
+}
+
+.link-design {
+
+  &:hover,
+  &:active {
+    color: #1B1464;
+  }
+
+  &.active {
+
+    &:link,
+    &:visited {
+      color: #1B1464;
+    }
+  }
+}
+
+.design {
+  .plan-price {
+    color: #1B1464;
+  }
+
+  .middle {
+    .plan-header::before {
+      background: #1B1464;
+    }
+
+    .plan-btn {
+      background-color: #1B1464;
+      color: #fff;
+
+      &:hover {
+        color: #47425d;
+        background-color: transparent;
+      }
+    }
+  }
+}
+
+.link-vedit {
+
+  &:hover,
+  &:active {
+    color: #3100ff;
+  }
+
+  &.active {
+
+    &:link,
+    &:visited {
+      color: #3100ff;
+    }
+  }
+}
+
+.vedit {
+  .plan-price {
+    color: #3100ff;
+  }
+
+  .middle {
+    .plan-header::before {
+      background: #3100ff;
+    }
+
+    .plan-btn {
+      background-color: #3100ff;
+      color: #fff;
+
+      &:hover {
+        color: #47425d;
+        background-color: transparent;
+      }
+    }
+  }
+}
+
+.link-iot {
+
+  &:hover,
+  &:active {
+    color: #d82c00;
+  }
+
+  &.active {
+
+    &:link,
+    &:visited {
+      color: #d82c00;
+    }
+  }
+}
+
+.iot {
+  .plan-price {
+    color: #d82c00;
+  }
+
+  .middle {
+    .plan-header::before {
+      background: #d82c00;
+    }
+
+    .plan-btn {
+      background-color: #d82c00;
+      color: #fff;
+
+      &:hover {
+        color: #47425d;
+        background-color: transparent;
+      }
+    }
+  }
+}
+
+.link-dataEntry {
+
+  &:hover,
+  &:active {
+    color: #b01c51;
+  }
+
+  &.active {
+
+    &:link,
+    &:visited {
+      color: #b01c51;
+    }
+  }
+}
+
+.dataEntry {
+  .plan-price {
+    color: #b01c51;
+  }
+
+  .middle {
+    .plan-header::before {
+      background: #b01c51;
+    }
+
+    .plan-btn {
+      background-color: #b01c51;
+      color: #fff;
+
+      &:hover {
+        color: #47425d;
+        background-color: transparent;
+      }
+    }
   }
 }
 

@@ -81,22 +81,15 @@ $(document).ready(function () {
       }
     });
 
-  // initialize isotop
+  // initialize isotope
   var $flistProject = $("#filter-project-items");
   var $filterProject = $("#project-filters");
-  // var $flistPackage = $("#filter-package-items");
-  // var $filterPackage = $("#package-filters");
-  // Run Isotope
+  // Run isotope
   $flistProject.isotope({
     filter: "*",
     itemSelector: '.filter-project-item',
     layout: "masonry"
   });
-  // $flistPackage.isotope({
-  //   filter: ".webdev",
-  //   itemSelector: '.filter-package-item',
-  //   layout: "masonry"
-  // });
   $filterProject.find("a").click(function() {
     var selector = $(this).attr("data-filter");
     $(this).parent().parent().find("a").removeClass("active");
