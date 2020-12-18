@@ -198,6 +198,28 @@ section {
   border-radius: 50%;
 }
 
+i.webdev {
+  background-color: orange;
+}
+i.appdev {
+  background-color: #b9de1d;
+}
+i.smm {
+  background-color: #16a085;
+}
+i.design {
+  background-color: #1B1464;
+}
+i.vedit {
+  background-color: #3100ff;
+}
+i.iot {
+  background-color: #d82c00;
+}
+i.dataEntry {
+  background-color: #b01c51;
+}
+
 .section-header {
   font-size: 3rem;
   font-weight: 600;
@@ -406,13 +428,14 @@ section {
 }
 
 .plan-btn {
-  margin-top: 30px;
+  margin: 30px auto 0 auto;
   font-size: 14px;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 1px;
   color: #111111;
   border: none;
+  display: block;
   background-color: rgba(18, 117, 228, 0.1);
   border-radius: 3px;
   padding: 16px 35px 16px 35px;
@@ -422,6 +445,8 @@ section {
 .plan-btn:hover {
   color: #47425d;
   background-color: transparent;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .link-webdev:hover, .link-webdev:active {
@@ -633,6 +658,12 @@ section {
   height: 400px;
 }
 
+#contact-top {
+  transform: translateY(-100px);
+  visibility: hidden;
+  z-index: -99;
+}
+
 .contact-details {
   font-family: "Raleway", sans-serif;
 }
@@ -795,8 +826,8 @@ footer p {
 
   nav.mobile {
     top: 28px;
-    width: 110vw;
-    right: -10vw;
+    width: 100%;
+    right: 0;
   }
 
   .hero .container {
@@ -820,6 +851,10 @@ footer p {
     font-size: 2rem;
   }
 
+  .build {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
   .build .container {
     padding: 0 !important;
   }
