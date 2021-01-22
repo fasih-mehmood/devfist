@@ -1,5 +1,26 @@
 $(document).ready(function () {
+  function animateSgv(id, delay, delayIncrement) {
+    const logo = document.getElementById(id);
+    logo.style.visibility = 'visible';
+    const logoPaths = document.querySelectorAll(`#${id} path`);
+    delay = delay;
+    for (let i = 0; i < logoPaths.length; i++) {
+      logoPaths[i].style.strokeDasharray = logoPaths[i].getTotalLength();
+      logoPaths[i].style.strokeDashoffset = logoPaths[i].getTotalLength();
+      logoPaths[i].style.animation = `line-anim 2s ease forwards ${delay}s`;
+      delay += delayIncrement;
+      console.log(delay);
+    }
+    logo.style.animation = `fill 0.5s ease forwards ${delay}s`;
+  }
+  // Set the id of SVG, delay time in seconds to start animation and delay between each animation
+  animateSgv('logo', 0, 0.3);
+  setTimeout(function () {
+    $(".overlay").fadeOut("slow");
+  }, 2300)
+
   AOS.init();
+
   // open navigation
   $(".btn-menu").click(e => {
     $("nav ul").toggleClass("hidden");
@@ -7,20 +28,22 @@ $(document).ready(function () {
 
   //scroll to top
   $(".go-top").click(e => {
-    $("html, body").animate({scrollTop:0}, '500');
+    $("html, body").animate({
+      scrollTop: 0
+    }, '500');
   });
 
-  if(window.innerWidth > 1024 && window.scrollY > 102) {
+  if (window.innerWidth > 1024 && window.scrollY > 102) {
     $(".site-header").addClass("fixed float-header");
   }
 
-  if(window.scrollY > 815) {
+  if (window.scrollY > 815) {
     $(".go-top").addClass("show");
   }
 
   // change header on scroll
   $(window).scroll(function () {
-    if(window.scrollY > 815) {
+    if (window.scrollY > 815) {
       $(".go-top").addClass("show");
     } else {
       $(".go-top").removeClass("show");
@@ -91,38 +114,38 @@ $(document).ready(function () {
     itemSelector: '.filter-project-item',
     layout: "masonry"
   });
-  $filterProject.find("a").click(function() {
+  $filterProject.find("a").click(function () {
     var selector = $(this).attr("data-filter");
     $(this).parent().parent().find("a").removeClass("active");
     $(this).addClass("active");
     $flistProject.isotope({
       filter: selector,
       animationOptions: {
-          duration: 750,
-          easing: "linear",
-          queue: false,
+        duration: 750,
+        easing: "linear",
+        queue: false,
       },
     });
     return false;
-    });
+  });
 
-    var $carousel = $(".main-carousel");
-    $carousel.flickity({
-      // options
-      cellAlign: 'center',
-      contain: true
-    });
+  var $carousel = $(".main-carousel");
+  $carousel.flickity({
+    // options
+    cellAlign: 'center',
+    contain: true
+  });
 
-    var $changeSlide = $("#package-slides a");
-    $changeSlide.click(function() {
-      var selector = $(this).attr("data-toggle");
-      $(this).parent().parent().find("a").removeClass("active");
-      $(this).addClass("active");
-      $carousel.flickity( 'select', selector );
-    });
+  var $changeSlide = $("#package-slides a");
+  $changeSlide.click(function () {
+    var selector = $(this).attr("data-toggle");
+    $(this).parent().parent().find("a").removeClass("active");
+    $(this).addClass("active");
+    $carousel.flickity('select', selector);
+  });
 
-    $carousel.on('change.flickity', function( event, index ) {
-      $changeSlide[index].click();
-    });
+  $carousel.on('change.flickity', function (event, index) {
+    $changeSlide[index].click();
+  });
 
 });
