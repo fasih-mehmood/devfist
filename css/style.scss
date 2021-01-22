@@ -290,21 +290,27 @@ i {
   &.webdev {
     background-color: $webdevColor;
   }
+
   &.appdev {
     background-color: $appdevColor;
   }
+
   &.smm {
     background-color: $smmColor;
   }
+
   &.design {
     background-color: $designColor;
   }
+
   &.vedit {
     background-color: $veditColor;
   }
+
   &.iot {
     background-color: $iotColor;
   }
+
   &.dataEntry {
     background-color: $dataEntryColor;
   }
@@ -753,6 +759,61 @@ footer {
   }
 }
 
+.bounce {
+  -webkit-animation-name: bounce;
+  animation-name: bounce;
+  -webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
+}
+
+.anim-cycle-99 {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+.anim-dur-2 {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+}
+
+.anim-dur-4 {
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
+}
+
+.anim-dur-6 {
+  -webkit-animation-duration: 6s;
+  animation-duration: 6s;
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
 @media(min-width: 1024px) {
   .site-header:not(.fixed) {
     background: transparent;
@@ -912,6 +973,7 @@ footer {
   .build {
     padding-top: 0 !important;
     padding-bottom: 0 !important;
+
     .container {
       padding: 0 !important;
     }

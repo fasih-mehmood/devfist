@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  AOS.init();
   // open navigation
   $(".btn-menu").click(e => {
     $("nav ul").toggleClass("hidden");
@@ -105,14 +106,14 @@ $(document).ready(function () {
     return false;
     });
 
-    $carousel = $(".main-carousel");
+    var $carousel = $(".main-carousel");
     $carousel.flickity({
       // options
       cellAlign: 'center',
       contain: true
     });
 
-    $changeSlide = $("#package-slides a");
+    var $changeSlide = $("#package-slides a");
     $changeSlide.click(function() {
       var selector = $(this).attr("data-toggle");
       $(this).parent().parent().find("a").removeClass("active");
