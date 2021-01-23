@@ -14,19 +14,31 @@ $(document).ready(function () {
   }
   // Set the id of SVG, delay time in seconds to start animation and delay between each animation
   animateSgv('logo', 0, 0.3);
+
+  function animateProgressBar() {
+    $('.progress .progress-bar').css("width", function () {
+      return $(this).attr("aria-valuenow") + "%";
+    });
+  }
+
   setTimeout(function () {
     $(".overlay").fadeOut("slow");
+
+    if (window.scrollY > 815) {
+      $(".go-top").addClass("show");
+      if (window.scrollY < 1500)
+        animateProgressBar();
+    }
   }, 2300)
 
   AOS.init();
-
-    var typed = new Typed('.element', {
-      strings: ["Web Development", "App Development", "Social Media Marketing", "Graphics Designing", "Video Editing", "IOT Automation", "Data Entry"],
-      typeSpeed: 50,
-      loop: true,
-      backDelay: 1200,
-      backSpeed: 40,
-    });
+  var typed = new Typed('.element', {
+    strings: ["Web Development", "App Development", "Social Media Marketing", "Graphics Designing", "Video Editing", "IOT Automation", "Data Entry"],
+    typeSpeed: 50,
+    loop: true,
+    backDelay: 1200,
+    backSpeed: 40,
+  });
 
   // open navigation
   $(".btn-menu").click(e => {
@@ -44,14 +56,12 @@ $(document).ready(function () {
     $(".site-header").addClass("fixed float-header");
   }
 
-  if (window.scrollY > 815) {
-    $(".go-top").addClass("show");
-  }
-
   // change header on scroll
   $(window).scroll(function () {
     if (window.scrollY > 815) {
       $(".go-top").addClass("show");
+      if (window.scrollY < 1500)
+        animateProgressBar();
     } else {
       $(".go-top").removeClass("show");
     }
