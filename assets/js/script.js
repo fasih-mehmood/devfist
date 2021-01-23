@@ -21,6 +21,14 @@ $(document).ready(function () {
 
   AOS.init();
 
+    var typed = new Typed('.element', {
+      strings: ["Web Development", "App Development", "Social Media Marketing", "Graphics Design", "Video Editing", "IOT Automation", "Data Entry"],
+      typeSpeed: 50,
+      loop: true,
+      backDelay: 1200,
+      backSpeed: 40,
+    });
+
   // open navigation
   $(".btn-menu").click(e => {
     $("nav ul").toggleClass("hidden");
@@ -104,30 +112,6 @@ $(document).ready(function () {
         }
       }
     });
-
-  // initialize isotope
-  var $flistProject = $("#filter-project-items");
-  var $filterProject = $("#project-filters");
-  // Run isotope
-  $flistProject.isotope({
-    filter: "*",
-    itemSelector: '.filter-project-item',
-    layout: "masonry"
-  });
-  $filterProject.find("a").click(function () {
-    var selector = $(this).attr("data-filter");
-    $(this).parent().parent().find("a").removeClass("active");
-    $(this).addClass("active");
-    $flistProject.isotope({
-      filter: selector,
-      animationOptions: {
-        duration: 750,
-        easing: "linear",
-        queue: false,
-      },
-    });
-    return false;
-  });
 
   var $carousel = $(".main-carousel");
   $carousel.flickity({

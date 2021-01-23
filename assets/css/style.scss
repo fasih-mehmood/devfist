@@ -417,113 +417,6 @@ i {
   }
 }
 
-.filter-project-item {
-  width: 20%;
-}
-
-.project-inner {
-  margin: 15px;
-
-  img {
-    max-width: 100%;
-  }
-
-  &:hover {
-    .project-title {
-      scale: 1 !important;
-    }
-  }
-}
-
-.project-title {
-  text-align: center;
-  padding: 20px;
-  font-size: 12px;
-  background-color: #fff;
-  position: relative;
-  width: 80%;
-  margin: 0 auto;
-  margin-top: -5rem;
-  transition: scale 0.3s ease;
-  scale: 0;
-
-  h3 {
-    margin: 0;
-    font-weight: 600;
-    font-size: 20px;
-  }
-}
-
-.testimonies {
-  background-image: url("../img/testimony-back.webp");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-
-  .container {
-    width: 80%;
-    position: relative;
-    z-index: 4;
-  }
-}
-
-.bg-overlay {
-  background-color: #000000;
-  opacity: 0.66;
-  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  position: absolute;
-}
-
-.fa-quote-left {
-  color: rgba(255, 255, 255, 0.33);
-  font-size: 52px;
-  margin: 0 auto 50px;
-}
-
-.carousel-item {
-  transition: 0.75s all ease;
-}
-
-.carousel-indicators li {
-  width: 7px;
-  height: 7px;
-  border-radius: 100%;
-  background-color: rgba(255, 255, 255, 0.33);
-  border: 2px solid #a49fba;
-
-  &:hover {
-    background-color: rgba(255, 255, 255, 0.33) !important;
-  }
-
-  &:not(.active) {
-    background-color: transparent;
-  }
-}
-
-.whisper {
-  color: #ffffff;
-  font-family: "Playfair Display", Sans-serif;
-  font-size: 24px;
-  font-style: italic;
-}
-
-.name {
-  color: #ffffff;
-  font-family: "Ubuntu", sans-serif;
-  font-size: 18px;
-  font-weight: 500;
-}
-
-.testimonial-position {
-  font-size: 13px;
-  font-weight: 500;
-}
-
 .pricing-plan {
   margin-bottom: 30px;
   margin-right: 3%;
@@ -952,11 +845,15 @@ footer {
     width: 80% !important;
 
     i {
-      margin-right: 1rem !important;
+      margin-right: 0.5rem !important;
     }
 
     h4 {
       font-size: 1.2rem;
+    }
+    .col-md-6 {
+      padding-left: 0;
+      padding-right: 0;
     }
   }
 }
