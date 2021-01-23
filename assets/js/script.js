@@ -21,7 +21,7 @@ $(document).ready(function () {
   AOS.init();
 
     var typed = new Typed('.element', {
-      strings: ["Web Development", "App Development", "Social Media Marketing", "Graphics Design", "Video Editing", "IOT Automation", "Data Entry"],
+      strings: ["Web Development", "App Development", "Social Media Marketing", "Graphics Designing", "Video Editing", "IOT Automation", "Data Entry"],
       typeSpeed: 50,
       loop: true,
       backDelay: 1200,
