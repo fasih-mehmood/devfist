@@ -671,6 +671,12 @@ i {
   }
 }
 
+.contact-details {
+  i {
+    font-size: 30px;
+  }
+}
+
 .form-control {
   padding: 15px 27px 15px 27px;
   color: #767676;
@@ -974,11 +980,6 @@ footer {
     width: 47%;
   }
 
-  .contact-details a {
-    display: block !important;
-    width: 60%;
-  }
-
   .contact-form {
     margin-top: 2rem;
   }
@@ -1003,9 +1004,5 @@ footer {
 
   .pricing-plan {
     width: 100%;
-  }
-
-  .contact-details a {
-    width: 80%;
   }
 }
