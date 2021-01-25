@@ -2,3 +2,8 @@
 .vscode
 css/bootstrap.min.css
 css/font-awesome.min.css
+test.html
+test.min.css
+test.scss
+assets/js/test.js
+assets/js/test.prod.js

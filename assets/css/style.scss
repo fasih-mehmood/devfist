@@ -73,28 +73,29 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   width: 441px;
   height: 141px;
   visibility: hidden;
 }
 
 @-webkit-keyframes line-anim {
-    to {
-      stroke-dashoffset: 0;
-    }
+  to {
+    stroke-dashoffset: 0;
+  }
 }
 
 @keyframes line-anim {
-    to {
-      stroke-dashoffset: 0;
-    }
+  to {
+    stroke-dashoffset: 0;
+  }
 }
 
 @-webkit-keyframes fill {
   from {
     fill: transparent;
   }
+
   to {
     fill: white;
   }
@@ -104,6 +105,7 @@ body {
   from {
     fill: transparent;
   }
+
   to {
     fill: white;
   }
@@ -244,13 +246,16 @@ nav {
 
 .aboutCaption {
   bottom: 0;
+
   a {
     font-size: 14px;
     text-decoration: none;
+
     &:link,
     &:visited {
       color: darkgrey;
     }
+
     &:hover,
     &:active {
       color: grey;
@@ -391,6 +396,11 @@ i {
   &:hover {
     box-shadow: 0px 10px 30px 0px rgba(79, 118, 157, 0.1);
   }
+}
+
+.service-item {
+  padding-top: 10px;
+  cursor: pointer;
 }
 
 .build {
@@ -867,6 +877,7 @@ footer {
     h4 {
       font-size: 1.2rem;
     }
+
     .col-md-6 {
       padding-left: 0;
       padding-right: 0;
@@ -877,6 +888,12 @@ footer {
 @media(max-width: 991px) {
   .filter-project-item {
     width: 33.3%;
+  }
+}
+
+@media(min-width: 768px) {
+  .border-right-md {
+    border-right: 1px solid #dee2e6 !important;
   }
 }
 
@@ -970,8 +987,13 @@ footer {
   .contact-form {
     margin-top: 2rem;
   }
+
   #logo {
     width: 341px;
+  }
+
+  .border-bottom-sm {
+    border-bottom: 1px solid #dee2e6 !important;
   }
 }
 
@@ -979,6 +1001,7 @@ footer {
   #logo {
     width: 241px;
   }
+
   .filter-project-item {
     width: 100%;
   }

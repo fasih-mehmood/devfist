@@ -1,4 +1,48 @@
 $(document).ready(function () {
+
+  // handling services section and modal popups
+  var serviceItem = $('.service-item');
+  var serviceModal = $('.modal-content');
+  serviceItem.click(function () {
+    var element = $(this);
+    var title = element.find('h4').text();
+    serviceModal.find('#servicesModalLabel').text(title);
+    var img = serviceModal.find('img');
+    var rightContent = serviceModal.find('.right-content');
+    var content = "";
+    if (title.includes("Web")) {
+      content = `<p>Increase your digital presence with a brand new website built From HTML/CSS.</br>All packages include a fully responsive design, which means your website will work perfectly over the cutting edge devices and screens sizes:</p> <ul class="pt-2"><li>Mobile First</li><li>No syntax errors</li><li>Basic SEO</li><li>Form integration</li><li>Cross-browser compatibility</li><li>Lazy Loading for images & Videos (fast loading speed)</li><li>Server Upload</li><li>Code & Images fully optimized</li></ul><p>We don't work with any page builder or premade templates.</p>`;
+      img.attr('src', 'assets/img/web-project.webp');
+      img.attr('alt', 'Frontend website');
+    } else if (title.includes("App")) {
+      content = `<p>Expand your business online or offline with custom made desktop and android applications.</br>We develop all sorts of applications ranging from chat applications to pos and management applications.</br>The pos system supports all features like:</p><ul class="pt-2"><li>Retail &amp; Whole Business Management</li><li>Stock &amp; Invetory Management System</li><li>Restaurant Management System</li><li>Multi service Center</li><li>Electronics, hardware &amp; Mobile shop</li><li>Super General store</li><li>Super Mart</li><li>Manage Single &amp; Variable products</li><li>Classify products</li><li>Stock alerts on low stock</li><li>Easily add purchases</li><li>Add purchase for different locations</li><li>Add discounts &amp; Taxes</li><li>Simplified interface for selling products</li><li>Add new customer</li></ul>`;
+      img.attr('src', 'assets/img/pos-project.webp');
+      img.attr('alt', 'Desktop Application');
+    } else if (title.includes("Social")) {
+      content = `<p>Online business is the future and for a successful future, effective Facebook advertising, and FB marketing is unavoidable as it has 2 Billion active users. </br>So if you are confused about</p><ul class="pt-2"><li>How to set up ads campaign</li><li>How to reach your target audience</li><li>How to increase brand awareness</li><li>How to boost your sales</li><li>How to increase traffic on your blog</li><li>How to generate maximum leads</li><li>How to set up a Facebook pixel</li></ul><p>then you are at the right place. </br>Our services include:</p><ul class="pt-2"><li>Complete Business Profile</li><li>Strategy for organic and inorganic FB marketing</li><li>Paid Facebook advertising</li><li>Account Management</li><li>Content Creation</li><li>Designing Custom Ads</li><li>Copy Writing</li><li>FB Ads compaign setup</li><li>Content Calendar</li><li>Pixel Setup</li><li>Ads campaign reports</li></ul>`;
+      img.attr('src', 'assets/img/social-project.webp');
+      img.attr('alt', 'Social media marketing');
+    } else if (title.includes("Graphics")) {
+      content = ``;
+      img.attr('src', 'assets/img/web-project.webp');
+      img.attr('alt', 'Frontend website');
+    } else if (title.includes("Video")) {
+      content = ``;
+      img.attr('src', 'assets/img/web-project.webp');
+      img.attr('alt', 'Frontend website');
+    } else if (title.includes("IOT")) {
+      content = ``;
+      img.attr('src', 'assets/img/web-project.webp');
+      img.attr('alt', 'Frontend website');
+    } else if (title.includes("Data")) {
+      content = ``;
+      img.attr('src', 'assets/img/web-project.webp');
+      img.attr('alt', 'Frontend website');
+    }
+    rightContent.html(content);
+    $(".modal").modal("toggle");
+  });
+
   function animateSgv(id, delay, delayIncrement) {
     const logo = document.getElementById(id);
     logo.style.visibility = 'visible';
