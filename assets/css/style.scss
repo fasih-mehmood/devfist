@@ -242,6 +242,22 @@ nav {
   font-weight: 600;
 }
 
+.aboutCaption {
+  bottom: 0;
+  a {
+    font-size: 14px;
+    text-decoration: none;
+    &:link,
+    &:visited {
+      color: darkgrey;
+    }
+    &:hover,
+    &:active {
+      color: grey;
+    }
+  }
+}
+
 .about {
 
   .about-text {
@@ -273,9 +289,9 @@ section {
   height: 15px;
 }
 
-.progress-bar {
-  transition: width 1s;
-}
+// .progress-bar {
+//   transition: width 1s;
+// }
 
 .stats {
   background-image: url("../img/stats-back.webp");
